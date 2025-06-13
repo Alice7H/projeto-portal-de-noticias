@@ -33,3 +33,20 @@
 .text-sm {
   font: var(--text-sm);
 }
+
+.desktop-only {
+  display: none;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@media (width >= 1280px) {
+  .desktop-only {
+    display: initial;
+  }
+}
